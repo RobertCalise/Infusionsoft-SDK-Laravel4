@@ -18,8 +18,8 @@ class Infusionsoft {
 	public static function sdk()
 	{	
 		//get config values for app name and api key
-		$appName =  Config::get('infusionsoft::appName');
-		$apiKey =  Config::get('infusionsoft::apiKey');
+		$appName =  Config::get('infusionsoft.appName');
+		$apiKey =  Config::get('infusionsoft.apiKey');
 		
 		$app = new \iSDK;
 		$app->cfgCon($appName, $apiKey);
